@@ -1,0 +1,34 @@
+{
+  "name": "tajiri_mpesa_oauth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arthur-codeX/tajiri_mpesa_oauth.git"
+  },
+  "keywords": [
+    "Mpesa",
+    "mpesa",
+    "m-pesa",
+    "M-PESA",
+    "mpesa",
+    "authentication"
+  ],
+  "author": "Arthur-codeX",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arthur-codeX/tajiri_mpesa_oauth/issues"
+  },
+  "homepage": "https://github.com/Arthur-codeX/tajiri_mpesa_oauth#readme",
+  "devDependencies": {
+    "jest": "^28.1.0"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "nodejs-base64-encode": "^1.1.0"
+  }
+}
