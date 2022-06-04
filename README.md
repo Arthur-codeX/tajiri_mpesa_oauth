@@ -1,8 +1,10 @@
 # Mpesa Authorization Token 
-
+>npm 
+[npm]](https://www.npmjs.com/package/tajiri_mpesa_oauth)
 
 ## tajiri_mpesa_oauth
 
+## NPM
 
 ## Description
 
@@ -31,6 +33,8 @@ This  is a simple package for generating mpesa-daraja authentication tokens.
 
    
 ## References
+
+
 
 >get the application credentials from daraja
 [daraja]](https://developer.safaricom.co.ke/)
