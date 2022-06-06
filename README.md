@@ -1,6 +1,7 @@
-# Mpesa Authorization Token 
->npm 
-[npm]](https://www.npmjs.com/package/tajiri_mpesa_oauth)
+# Mpesa Authorization Token
+
+> npm
+> [npm]](https://www.npmjs.com/package/tajiri_mpesa_oauth)
 
 ## tajiri_mpesa_oauth
 
@@ -8,33 +9,50 @@
 
 ## Description
 
-This  is a simple package for generating mpesa-daraja authentication tokens.
-
+This is a simple package for generating mpesa-daraja authentication tokens.
 
 ## Usage
 
-### Installing
+### Installing NPM
 
-    npm install tajiri_mpesa_oauth
+    npm install tajiri-mpesa-oauth
+
+### Installing Yarn
+
+    yarn add tajiri-mpesa-oauth
 
 ### Usage
 
-    const Token=require('tajiri_mpesa_oauth')
+```javascript
+const mpesa_oauth = require("tajiri-mpesa-oauth");
 
->
-> Ensure you have the mpesa app credentials.
+// The Consumer Key and Secret can be found in daraja
+const conf = {
+  CONSUMER_KEY: "8K7tZgVOxD2CRiqvhKC1iEpyId1zcniG",
+  CONSUMER_SECRET: "efhD37bLSAsNkdvG",
+};
 
-   const conf={
-        CONSUMER_KEY:''mpesa app consumer key",
-        CONSUMER_SECRET:"mpesa app consmer secret"
-    }
-   const environment='sandbox'   // Note this is the default environment.
-   auth_type='Basic'  //This is the default.
+// Using Async Await
 
-   
+async function getMpesaToken() {
+  let token = await mpesa_oauth(conf);
+  console.log(token);
+}
+
+getMpesaToken();
+
+//Using Promises
+
+mpesa_oauth(conf)
+  .then((token) => {
+    console.log(token);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+```
+
 ## References
 
-
-
->get the application credentials from daraja
-[daraja]](https://developer.safaricom.co.ke/)
+> get the application credentials from daraja
+> [daraja]](https://developer.safaricom.co.ke/)
