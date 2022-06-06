@@ -1,6 +1,7 @@
-# Mpesa Authorization Token
+Mpesa Authorization Token
 
 > npm
+
 > [npm]](https://www.npmjs.com/package/tajiri_mpesa_oauth)
 
 ## tajiri_mpesa_oauth
@@ -15,11 +16,11 @@ This is a simple package for generating mpesa-daraja authentication tokens.
 
 ### Installing NPM
 
-    npm install tajiri-mpesa-oauth
+npm install tajiri-mpesa-oauth
 
 ### Installing Yarn
 
-    yarn add tajiri-mpesa-oauth
+yarn add tajiri-mpesa-oauth
 
 ### Usage
 
@@ -50,9 +51,14 @@ mpesa_oauth(conf)
   .catch((err) => {
     console.log(err);
   });
+
+/**
+ *
+ * More About Promises Error Handling.
+ * https://www.javascripttutorial.net/es6/promise-error-handling/
+ */
 ```
 
-## References
-
 > get the application credentials from daraja
+
 > [daraja]](https://developer.safaricom.co.ke/)
